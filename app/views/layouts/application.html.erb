@@ -1,14 +1,22 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>Micoly</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+<html lang="ja">
+  <head>
+    <title><%= content_for?(:title) ? yield(:title) : 'Micoly' %></title>
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta charset="utf-8">
+    <meta name="keywords" content="Micoly, ミコリー, ネイル, ファッション">
+    <meta name="description" content='低価格でネイルを楽しむことが出来る新しいサービス'>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
 
-<%= yield %>
+    <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag 'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
+    <%= favicon_link_tag 'favicon.png' %>
+  </head>
 
-</body>
+  <body>
+    <%= yield %>
+  </body>
+
 </html>

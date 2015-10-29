@@ -1,0 +1,221 @@
+@charset "utf-8";
+
+html{  
+  margin:0;
+  padding:0;
+  width:100%;
+}
+
+body{
+  margin:0px;
+  padding:0px;
+  width:100%;
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
+ul{
+  list-style:none;
+}
+
+header{
+  height:60px;
+  width:100%;
+  position:fixed;
+  background-color:rgb(255, 255, 255);
+  z-index:1000;
+  top:0px;
+  opacity:0.9;
+  box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.3);
+}
+header img{
+  height:60px;
+  margin-left:80px;
+}
+header ul{
+  float:right;
+  padding:0px;
+  width:400px;
+}
+header li{
+  font-size:14px;
+  line-height:14px;
+  display:inline;
+  margin:0px 10px;
+}
+header span.login{
+  border-radius:5px;
+  background-color:#e83743;
+  color:rgb(255, 255, 255);
+  padding:5px 10px;
+}
+header li a{
+  text-decoration:none;
+  color: #333;
+}
+
+div.content{
+  margin-top:60px;
+  width:100%;
+  height:100%;
+}
+
+div.content > div.top{
+  height:500px;
+  width:100%;
+  background:url(<%= asset_path "top_bg.png" %>);
+  color:rgb(0, 0, 0);
+  background-size:cover;
+  position:fixed;
+}
+div.content > div.top > div.left{
+  width:50%;
+  margin:200px 0px;
+  float:left;
+  text-align:center;
+}
+div.content > div.top > div.left span{
+  color:white;
+  font-size:40px;
+  line-height:70px;
+  display:block;
+}
+div.content > div.top div.right{
+  width:50%;
+  padding:200px 0px;
+  float:right;
+  text-align:center;
+}
+div.content > div.top div.right span{
+  color:white;
+  font-size:24px;
+  line-height:44px;
+  display:block;
+}
+div.content > div.top div.right span.registration{
+  font-size:16px;
+  line-height:20px;
+  border-radius:5px;
+  background-color:#e83743;
+  color:rgb(255, 255, 255);
+  padding:15px 0px;
+  margin:50px 5%;
+  display:inline;
+  width:40%;
+  float:right;
+}
+div.right a{
+  text-decoration:none;
+}
+
+div.content > div.middle{
+  height:1000px;
+  width:100%;
+  background-color:white;
+  text-align:center;
+  top:560px;
+  position:absolute;
+}
+div.content > div.middle > div.explain{
+  text-align:center;
+  height:500px;
+  width:100%;
+  position:static;
+}
+div.content > div.middle > div.second{
+  background-color: #F7F7F7;
+}
+div.content > div.middle > div.explain > div.top{
+  padding:70px 50px;
+}
+div.content > div.middle > div.explain > div.top > span{
+  color:#5f5d60;
+  font-size:22px;
+  line-height:40px;
+  display:block;
+}
+div.content > div.middle > div.explain > div.bottom{
+  padding:50px;
+}
+div.content > div.middle > div.explain > div.bottom > span{
+  color:#5f5d60;
+  font-size:17px;
+  line-height:30px;
+  display:block;
+}
+div.content > div.middle > div.explain > div.photo-title{
+  padding:30px;
+}
+div.content > div.middle > div.explain > div.photo-title > span{
+  color:#5f5d60;
+  font-size:22px;
+  line-height:40px;
+  display:block;
+}
+div.content > div.middle > div.explain > div.photos{
+  height:320px;
+}
+div.content > div.middle > div.explain > div.photos > div.photo{
+  width:33.3%;
+  float:left;
+}
+div.content > div.middle > div.explain > div.photos > div.photo > img{
+  height:250px;
+  width:250px;
+  display:block;
+  margin:0px auto;
+}
+div.content > div.middle > div.explain > div.photos > div.photo > div.text-box{
+  width:70%;
+  margin:0px 15%;
+}
+div.content > div.middle > div.explain > div.photos > div.photo > div.text-box > span.title{
+  width:300px;
+  font-size:16px;
+  display:block;
+  margin:20px auto;
+  border-radius:2px;
+  background-color:#e83743;
+  color:rgb(255, 255, 255);
+}
+div.content > div.middle > div.explain > div.photos > div.photo > div.text-box > span.text{
+  font-size:14px;
+}
+
+footer{
+  height:135px;
+  background-color:rgb(51, 73, 95);
+  width:100%;
+  top:1560px;
+  position:absolute;
+}
+footer img{
+  width:100px;
+  position:absolute;
+  top:40px;
+  left:100px;
+}
+footer p{
+  color: white;
+  font-size:12px;
+  position:absolute;
+  top:70px;
+  left:100px;
+}
+footer ul{
+  position:absolute;
+  top:40px;
+  left:300px;
+  padding:0px;
+  width:600px;
+  height:60px;
+}
+footer li{
+  font-size:14px;
+  line-height:14px;
+  display:inline;
+  margin:23px 10px;
+}
+footer li a{
+  color:white;
+  text-decoration:none;
+}

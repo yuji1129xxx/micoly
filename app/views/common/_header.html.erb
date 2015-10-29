@@ -1,0 +1,19 @@
+<header>
+  <%= image_tag("logo_black.png") %>
+  <ul>
+    <li>
+      <%= link_to "ホーム", root_path %>
+    </li>
+    <li>
+      <%= link_to "ネイリスト一覧", root_path %>
+    </li>
+    <li>
+      <%= link_to "お知らせ", root_path %>
+    </li>
+    <li>
+      <%= link_to root_path do %>
+        <span class="login">ログイン</span>
+      <% end %>
+    </li>
+  </ul>
+</header>

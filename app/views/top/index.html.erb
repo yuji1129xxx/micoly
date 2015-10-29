@@ -1,0 +1,62 @@
+<%= render partial: 'common/header' %>
+<%= render partial: 'common/footer' %>
+
+<div class="content">
+  <div class="top">
+    <div class="left">
+      <span>好みのジェルネイルが</span>
+      <span>オフ込み2,500円から</span>
+    </div>
+    <div class="right">
+      <span>登録はこちらから(登録無料/年会費なし)</span>
+      <%= link_to root_path do %>
+        <span class="registration">ネイリストとして登録</span>
+      <% end %>
+      <%= link_to root_path do %>
+        <span class="registration">カスタマーとして登録</span>
+      <% end %>
+    </div>
+  </div>
+  <div class="middle">
+    <div class="explain">
+      <div class="top">
+        <span>micoly（ミコリー）は、フリーネイリストやセルフネイリストが、</span>
+        <span>自分や相手の家、学校の空きスペースなどを使って、ネイルをするサービスです。</span>
+      </div>
+      <div class="bottom">
+        <span>フリーのネイリストの方はもちろん、趣味でネイルをしているセルフネイリスト、</span>
+        <span>また、専門学校やスクールに通っているネイルの卵などが</span>
+        <span>可愛いネイルをあなたに提供します</span>
+        <span>サロンを介さないため、オフ込み2,500円から利用出来ます。</span>
+      </div>
+    </div>
+    <div class="explain second">
+      <div class="photo-title">
+        <span>もっと多くの人に、ジェルネイルを</span>
+      </div>
+      <div class="photos">
+        <div class="photo">
+          <%= image_tag("start_pic3.png") %>
+          <div class="text-box">
+            <span class="title">手頃な価格でジェルネイル</span>
+            <span class="text">フリーのネイリストやネイリストの卵が、手頃な価格でジェルネイルをしてくれます。</span>
+          </div>
+        </div>
+        <div class="photo">
+          <%= image_tag("start_pic2.png") %>
+          <div class="text-box">
+            <span class="title">過去のネイル作品の閲覧</span>
+            <span class="text">過去のネイル作品を確認することもできます。自分が好きなネイリストを見つけましょう。</span>
+          </div>
+        </div>
+        <div class="photo">
+          <%= image_tag("start_pic1.png") %>
+          <div class="text-box">
+            <span class="title">隙間時間にネイルの技術磨き</span>
+            <span class="text">ネイリストは隙間時間を見つけて、技術磨きだけでなく、お小遣い稼ぎもできます。</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
