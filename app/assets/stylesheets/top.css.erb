@@ -4,17 +4,23 @@ html{
   margin:0;
   padding:0;
   width:100%;
+  height:100%;
 }
 
 body{
   margin:0px;
   padding:0px;
   width:100%;
+  height:100%;
   font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 }
 
 ul{
   list-style:none;
+}
+
+#error_explanation h2{
+  display:none;
 }
 
 header{
@@ -187,6 +193,7 @@ footer{
   width:100%;
   top:1560px;
   position:absolute;
+  z-index:1000;
 }
 footer img{
   width:100px;
@@ -219,3 +226,96 @@ footer li a{
   color:white;
   text-decoration:none;
 }
+
+section.head{
+  background-color:rgb(51, 73, 95);
+  height:100px;
+  position:relative;
+}
+section.head img{
+  height:60px;
+  margin:20px 50px;
+}
+section.head ul{
+  width:200px;
+  margin:0px;
+  padding:43px 0px;
+  position:absolute;
+  top:0px;
+  right:0px;
+}
+section.head li{
+  font-size:14px;
+  display:inline;
+  margin:0px 10px;
+}
+section.head li a{
+  color:white;
+  text-decoration:none;
+}
+
+section.form{
+  width:100%;
+  height:100%;
+  background-color:rgb(249 ,249, 249);
+}
+section.form > div.input{
+  padding:50px 0px;
+  margin:0 20%;
+}
+section.form > div.input p.title{
+  font-size:28px;
+  color:rgb(51, 73, 95);
+}
+section.form > div.input div.form{
+  padding-bottom:30px;
+}
+section.form > div.input div.form-box{
+  border:1px solid rgb(135, 136, 140);
+  border-radius:3px;
+  padding:40px;
+  position:relative;
+}
+section.form > div.input div.form-box a{
+  color:rgb(100, 100, 100);
+  margin-top:20px;
+}
+section.form > div.input span.label{
+  font-size:16px;
+  display:block;
+  color:rgb(135, 136, 140);
+  margin-bottom:3px;
+}
+section.form > div.input input{
+  font-size:18px;
+  line-height:27px;
+  width:100%;
+  border:none;
+  border-bottom:1px solid rgb(0, 0, 0);
+  background-color:rgb(249 ,249, 249);
+}
+section.form > div.input input[type="submit"]{
+  background-color:rgb(13, 185, 124);
+  font-size:16px;
+  padding:15px auto;
+  width:30%;
+  border:none;
+  color:rgb(255, 255, 255);
+  float:right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,16 +1,27 @@
-<h2>Resend confirmation instructions</h2>
+<section class="head">
+  <%= link_to image_tag("logo_white.png"), root_path %>
+  <ul>
+    <li>
+      <%= link_to "ログイン", new_user_session_path %>
+    </li>
+    <li>
+      <%= link_to "新規登録", new_user_registration_path %>
+    </li>
+  </ul>
+</section>
 
-<%= form_for(resource, as: resource_name, url: confirmation_path(resource_name), html: { method: :post }) do |f| %>
-  <%= devise_error_messages! %>
-
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, value: (resource.pending_reconfirmation? ? resource.unconfirmed_email : resource.email) %> 
+<section class="form">
+  <div class="input">
+    <p class="title">確認メール再送</p>
+    <%= devise_error_messages! %>
+    <div class="form-box">
+      <%= form_for(resource, as: resource_name, url: confirmation_path(resource_name), html: { method: :post }) do |f| %>
+        <div class="form">
+          <span class="label">メールアドレス</span>
+          <%= f.email_field :email, autofocus: true %>
+        </div>
+        <%= f.submit "メール再送" %>
+      <% end %>
+    </div>
   </div>
-
-  <div class="actions">
-    <%= f.submit "Resend confirmation instructions" %>
-  </div>
-<% end %>
-
-<%= render "users/shared/links" %>
+</section>
